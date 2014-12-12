@@ -36,6 +36,7 @@ public boolean isPrime(long num){
   if(num<2){return false;}
   for(long i=2;(i*i)<=num;i++){
     out = ((num % i) == 0 ) ? false : out;
+    if(!out){break;}
   }
   return out;
 }
